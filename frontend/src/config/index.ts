@@ -5,3 +5,4 @@ export * from './contracts';
 export * from './networks';
 export * from './wagmi';
 export * from './icons';
+export * from './env';
