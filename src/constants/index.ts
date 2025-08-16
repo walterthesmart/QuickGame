@@ -1,31 +1,10 @@
-import { abi as lineaAbi, contractAddress as lineaAddress, networkName as lineaNetworkName } from './contractInfoLinea';
-import { abi as bscAbi, contractAddress as bscAddress, networkName as bscNetworkName } from './contractInfoBsc';
-import { abi as defaultAbi, contractAddress as defaultAddress, networkName as defaultNetworkName } from './contractInfo';
+// Re-export contract information
+// This file is kept for backward compatibility
+// New code should import from src/config/contracts.ts
 
-// Linea Sepolia chain ID
-const LINEA_SEPOLIA_CHAIN_ID = 59141;
-// BSC Testnet chain ID 
-const BSC_TESTNET_CHAIN_ID = 97;
+export { getContractInfo } from '../config/contracts';
 
-export const getContractInfo = (chainId?: number) => {
-  switch (chainId) {
-    case LINEA_SEPOLIA_CHAIN_ID:
-      return {
-        abi: lineaAbi,
-        contractAddress: lineaAddress,
-        networkName: lineaNetworkName
-      };
-    case BSC_TESTNET_CHAIN_ID:
-      return {
-        abi: bscAbi,
-        contractAddress: bscAddress,
-        networkName: bscNetworkName
-      };
-    default:
-      return {
-        abi: defaultAbi,
-        contractAddress: defaultAddress,
-        networkName: defaultNetworkName
-      };
-  }
-}; 
+// Re-export individual contract configs for direct access
+export * from './contractInfo';
+export * from './contractInfoBsc';
+export * from './contractInfoLinea';

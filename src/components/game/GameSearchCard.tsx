@@ -12,7 +12,7 @@ import {
 } from 'lucide-react';
 import { formatEther } from 'viem';
 import Link from 'next/link';
-import { GameSearchCardProps } from '../types';
+import { GameSearchCardProps } from '../../types';
 
 const GameSearchCard: React.FC<GameSearchCardProps> = ({
   game,

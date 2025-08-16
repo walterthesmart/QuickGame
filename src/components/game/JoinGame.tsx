@@ -11,11 +11,11 @@ import {
 } from 'lucide-react';
 import { formatEther, parseEther } from 'viem';
 import { useAccount, useReadContract, useWaitForTransactionReceipt, useWriteContract, useChainId } from 'wagmi';
-import { getContractInfo } from '../constants';
+import { getContractInfo } from '../../constants';
 import GameSearchCard from './GameSearchCard';
 import toast from 'react-hot-toast';
-import { extractErrorMessages } from '../utils';
-import { Game } from '../types';
+import { extractErrorMessages } from '../../utils';
+import { Game } from '../../types';
 import { ErrorBoundary } from 'react-error-boundary';
 
 

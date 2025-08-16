@@ -1,35 +1,10 @@
-// Define the type for the game object
-export interface Game {
-  choices: number[];
-  gameId: bigint; 
-  gameType: number;
-  isActive: boolean;
-  lastPlayerMove: string;
-  player1Moves: number[];
-  player2Moves: number[];
-  players: string[];
-  roundsPlayed: number;
-  scores: number[];
-  stake: bigint; 
-}
+// Re-export all types from domain-specific files
 
-export interface GameSearchCardProps {
-  game: Game | undefined;
-  onJoinGame: (gameId: bigint, stake: bigint) => void;
-  isLoading: boolean;
-  userAddress: `0x${string}` | undefined;
-}
+// Game types
+export * from './game';
 
-export interface GameHistoryCardProps {
-  game: Game;
-  userAddress: `0x${string}` | undefined;
-}
+// UI component types
+export * from './ui';
 
-export type MoveType = 'Rock' | 'Paper' | 'Scissors';
-
-
-export type MoveColor = {
-  bg: string;
-  text: string;
-  iconBg: string;
-};
+// API and blockchain types
+export * from './api';

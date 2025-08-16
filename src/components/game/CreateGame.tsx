@@ -4,9 +4,9 @@ import React, { useState } from 'react';
 import { Trophy, Coins, Swords, Timer, Info } from 'lucide-react';
 import { parseEther } from 'viem';
 import { useWriteContract, useWaitForTransactionReceipt, useWatchContractEvent, useChainId } from 'wagmi';
-import { getContractInfo } from '../constants';
+import { getContractInfo } from '../../constants';
 import toast from 'react-hot-toast';
-import { extractErrorMessages } from '../utils';
+import { extractErrorMessages } from '../../utils';
 import { ErrorBoundary } from 'react-error-boundary';
 
 

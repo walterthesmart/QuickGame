@@ -2,8 +2,7 @@
 
 import { useState } from 'react';
 import { Plus, Users } from 'lucide-react';
-import CreateGame from '../components/CreateGame';
-import JoinGame from '../components/JoinGame';
+import { CreateGame, JoinGame } from '../components';
 import { ErrorBoundary } from 'react-error-boundary';
 
 

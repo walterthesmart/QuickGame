@@ -1,4 +1,4 @@
-uimport { getDefaultConfig } from "@rainbow-me/rainbowkit";
+import { getDefaultConfig } from "@rainbow-me/rainbowkit";
 import {
   lineaSepolia,
   bscTestnet,

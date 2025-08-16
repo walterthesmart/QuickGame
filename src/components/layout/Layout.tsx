@@ -5,10 +5,9 @@ import { usePathname } from 'next/navigation';
 import { useRouter } from 'next/router'; // Import useRouter
 import { Home, GamepadIcon, History } from 'lucide-react';
 import { useAccount } from 'wagmi';
-import { toast } from 'react-hot-toast'; 
+import { toast } from 'react-hot-toast';
 import Image from 'next/image';
-import { useConnect, useDisconnect } from 'wagmi';
-import { useEffect, useMemo } from 'react';
+
 import { ConnectButton } from '@rainbow-me/rainbowkit';
 
 import '@rainbow-me/rainbowkit/styles.css';
@@ -48,7 +47,7 @@ const Layout: React.FC<{ children: React.ReactNode }> = ({ children }) => {
       <header className='fixed top-0 left-0 right-0 h-14 bg-gray-900 shadow-lg z-50'>
         <div className='flex items-center justify-between h-full px-4'>
           <Image
-            src='/quickgame-img.webp' // Update with your image path
+            src='/images/quickgame-img.webp' // Update with your image path
             alt='QuickGame' // Provide an alt text for accessibility
             width={40} // Set the desired width
             height={40} // Set the desired height
